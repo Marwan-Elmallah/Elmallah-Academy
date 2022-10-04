@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*    Vendor Prefix     */
+/* -wekit-      Chrome  */
+/* -moz-        Firefox */
+/* -ms-         IE      */
+/* -o-          Opera   */
+
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.btn-search {
+    margin-right: 10px;
+}
+
+.img-block {
+    height: 80vh;
+}
+
+.btn-hover:hover {
+    color: white !important;
+}
+
+.test:hover {
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+h2 {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+.copy {
+    margin-left: 40px;
+}
+
+
+.img-fluid {
+    position: relative;
+    margin: 15px 0px;
+    height: 250px;
+}
+
+.img-container {
+    /* position: absolute; */
+    background-image: url(../imgs/programming.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
+    width: 100%;
+}
+
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.container-designed-by {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.item1-designed-by img {
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+}
+
+.item3-designed-by img {
+    background-size: cover;
+    width: 80%;
+    height: 90%;
+}
+
+.item2-designed-by img {
+    background: blue;
+    width: 80%;
+    height: 90%;
+}
+
+.item {
+    background-color: rgba(128, 128, 128, 0.479);
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    padding: 15px 0px;
+}
+
+.name {
+    font-size: 25px;
+}
+
+
+.imp-links a {
+    color: white;
+}
+
+.join-us i {
+    font-size: larger;
+    padding: 10px;
+}
+
+.join-us a {
+    color: white;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+.container-join {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}

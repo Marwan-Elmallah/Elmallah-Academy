@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Optimize view to Device  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- make older version of IE working fine  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+    <title>Elmallah Academy</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Academy
+                    <img src="./imgs/logo.png" alt="Elmallah" style="width:40px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Vision</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Front-End</a></li>
+                                <li><a class="dropdown-item" href="#">Back-End</a></li>
+                                <li><a class="dropdown-item" href="#">Full-Stack</a></li>
+                                <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex search">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary btn-search" type="button">Search</button>
+                        <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Modal">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">password</label>
+                            <input class="form-control" id="exampleFormControlTextarea1" rows="3" type="password"></>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imgs/thumbnail.png" alt="Los Angeles" class="d-block img-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <!-- <h3>Java Script</h3> -->
+                        <!-- <p>We had such a great time in LA!</p> -->
+                        <button type="button" class="btn btn-outline-info btn-hover">Learn More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/js.jpg" alt="Chicago" class="d-block img-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <!-- <h3>Python</h3> -->
+                        <!-- <p>Thank you, Chicago!</p> -->
+                        <button type="button" class="btn btn-outline-info btn-hover">Learn More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/angular.png" alt="New York" class="d-block img-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <!-- <h3>Angular</h3> -->
+                        <!-- <p>We love the Big Apple!</p> -->
+                        <button type="button" class="btn btn-outline-info btn-hover">Learn More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/reactpng.png" alt="New York" class="d-block img-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <!-- <h3>React</h3> -->
+                        <!-- <p>We love the Big Apple!</p> -->
+                        <button type="button" class="btn btn-outline-info btn-hover">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </main>
+
+    <section class="welcome">
+        <div class="container-fluid bg-dark text-white">
+            <h1>Welcome</h1>
+            <p>Start from CS50</p>
+            <button type="button" class="btn btn-secondary my-2">Learn More</button>
+        </div>
+    </section>
+
+    <section class="programming-languages">
+        <div class="list-group">
+            <h2>Programming Languages</h2>
+            <a href="#Js" class="list-group-item list-group-item-action list-group-item-light test">Java Script</a>
+            <a href="#python" class="list-group-item list-group-item-action list-group-item-light test">Python</a>
+            <a href="#java" class="list-group-item list-group-item-action list-group-item-light test">Java</a>
+            <a href="#c" class="list-group-item list-group-item-action list-group-item-light test">C++</a>
+        </div>
+    </section>
+
+    <section class="test-code">
+        <h2>Print In Different Languages</h2>
+        <div class="container-fluid bg-dark text-white">
+
+            <a href="#python" class="btn btn-outline-info btn-hover" data-bs-toggle="collapse"
+                style="margin-top: 15px ;"> Click Here
+                For Python Code</a>
+            <div id="python" class="collapse" style="color: #00ff16;">
+                name = input('enter your name: '); print("Hello" + name) <button type="button"
+                    class="btn btn-outline-success copy" onclick="myFunction()">Copy</button>
+            </div>
+
+            <hr>
+
+            <a href=" #Js" class="btn btn-outline-info btn-hover" data-bs-toggle="collapse">Click Here For Java Script
+                Code</a>
+            <div id="Js" class="collapse" style="color: #00ff16;">
+                console.log("Welcome to Programiz!") <button type="button"
+                    class="btn btn-outline-success copy">Copy</button>
+            </div>
+            <hr>
+
+            <a href="#Java" class="btn btn-outline-info btn-hover" data-bs-toggle="collapse">Click Here For Java
+                Code</a>
+            <div id="Java" class="collapse" style="color: #00ff16;">
+                System.out.println("Hello World!"); <button type="button"
+                    class="btn btn-outline-success copy">Copy</button>
+            </div>
+
+            <hr>
+
+            <a href="#c" class="btn btn-outline-info btn-hover" data-bs-toggle="collapse"
+                style="margin-bottom: 15px ;">Click Here For C++ Code</a>
+            <div id="c" class="collapse" style="color: #00ff16;">
+                std::cout &gt&gt "No need to store this string" ; <button type="button"
+                    class="btn btn-outline-success copy" style="margin-bottom: 15px ;">Copy</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="img-fluid">
+        <div class="img-container"></div>
+    </section>
+
+    <section class="ref">
+        <h2>Referances</h2>
+        <div class="container-fluid container-cards">
+
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/json.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">JSON</h4>
+                    <p class="card-text">Start to learn JSON</p>
+                    <a href="https://www.json.org/json-en.html" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/python.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Python</h4>
+                    <p class="card-text">Start to learn Python</p>
+                    <a href="https://www.python.org/" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/thumbnail.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">HTML</h4>
+                    <p class="card-text">Start to learn HTML</p>
+                    <a href="https://www.w3schools.com/html/" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/thumbnail.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">CSS</h4>
+                    <p class="card-text">Start to learn CSS</p>
+                    <a href="https://www.w3schools.com/css/default.asp" class="btn btn-secondary my-2">Go
+                        Now</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/angular.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Anguler</h4>
+                    <p class="card-text">Start to learn Anguler</p>
+                    <a href="https://angular.io/" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/reactpng.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">React</h4>
+                    <p class="card-text">Start to learn React</p>
+                    <a href="https://reactjs.org/" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/php.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">PHP</h4>
+                    <p class="card-text">Start to learn PHP</p>
+                    <a href="https://www.php.net/" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="./imgs/js.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Java Script</h4>
+                    <p class="card-text">Start to learn Java Script</p>
+                    <a href="https://www.javascript.com/" class="btn btn-secondary my-2">Go Now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="img-fluid">
+        <div class="img-container"></div>
+    </section>
+
+    <section class="designed-by">
+        <h2 style="margin-bottom: 20px;">Designed By</h2>
+        <div class="container-designed-by">
+            <div class="item1-designed-by item">
+                <img src="./imgs/marwan.jpeg" alt="">
+                <div class="img"></div>
+                <p class="name">Elmallah</p>
+            </div>
+            <div class="item2-designed-by item">
+                <img src="./imgs/marwan-elmallah.jpeg" alt="">
+                <div class="img"></div>
+                <p class="name">Eng.Marwan</p>
+            </div>
+            <div class="item3-designed-by item">
+                <img src="./imgs/marwan.jpeg" alt="">
+                <div class="img"></div>
+                <p class="name">Marwan Elmallah</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-us">
+        <h2>Join Us</h2>
+        <div class="container-join">
+            <div class="card m-3 bg-dark" style="width: 18rem;">
+                <div class="card-body text-light d-flex flex-column text-center">
+                    <h6 class="card-title mb-4">Subscribe Now
+                    </h6>
+                    <i class="fas fa-thumbs-up"></i>
+                    <a href="" target="_blank" class="card-link">Go to link</a>
+                </div>
+            </div>
+            <div class="card m-3 bg-dark" style="width: 18rem;">
+                <div class="card-body text-light d-flex flex-column text-center">
+                    <h6 class="card-title mb-4">Follow
+                    </h6>
+                    <i class="fas fa-heart"></i>
+                    <a href="" target="_blank" class="card-link">Go to link</a>
+                </div>
+            </div>
+            <div class="card m-3 bg-dark" style="width: 18rem;">
+                <div class="card-body text-light d-flex flex-column text-center">
+                    <h6 class="card-title mb-4">Like the page
+                    </h6>
+                    <i class="fas fa-external-link-alt"></i>
+                    <a href="" target="_blank" class="card-link">Go to link</a>
+                </div>
+            </div>
+            <div class="card m-3 bg-dark" style="width: 18rem;">
+                <div class="card-body text-light d-flex flex-column text-center">
+                    <h6 class="card-title mb-4">watch vedios
+                    </h6>
+                    <i class="fas fa-video"></i>
+                    <a href="" target="_blank" class="card-link ">Go to link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light mt-5 p-2 pb-5 ">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="border-top my-3">
+                    <h5><i class="fas fa-address-card"></i> Contact US</h5>
+                    <hr class="border-top my-3">
+                    <address>
+                        <p>Tel : 01112689590</p>
+                        <p>Address : Alexandria,EGYPT</p>
+                        <p>Fax : 000-000-000</p>
+                    </address>
+                </div>
+                <div class="col-md-4 imp-links">
+                    <hr class="border-top my-3">
+                    <h5><i class="fas fa-link"></i> Important links</h5>
+                    <hr class="border-top my-3">
+                    <p><a href="https://github.com/Marwan-Elmallah" target="_blank">GITHUB</a></p>
+                    <p><a href="https://www.linkedin.com/in/marwan-elmallah-958093184/" target="_blank">LINKEDIN</a></p>
+                    <p><a href="https://www.facebook.com/MarwanElmallah" target="_blank">FACEBOOK</a></p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="border-top my-3">
+                    <h5><i class="fas fa-eye"></i> Vision</h5>
+                    <hr class="border-top my-3">
+                    <p>Serveices for all </p>
+                    <p>Provide best serveices</p>
+                    <p>you will be better than before</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <span class="text-center d-block text-secondary">Copyright © 2022 Marwan Elmallah, Academy. All
+            rights</span>
+        <hr>
+        <!-- /footer -->
+    </footer>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
